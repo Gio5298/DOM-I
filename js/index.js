@@ -43,27 +43,27 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //navBar vvv
 
-const aTags = document.querySelectorAll('a')
+const aTags = document.querySelectorAll('a');
 
-aTags[0].setAttribute('class', '.nav-item-1')
-aTags[0].innerText = "Service"
-aTags[1].setAttribute('class', '.nav-item-2')
-aTags[1].innerText = "Product"
-aTags[2].setAttribute('class', '.nav-item-3')
-aTags[2].innerText = "Vision"
-aTags[3].setAttribute('class', '.nav-item-4')
-aTags[3].innerText = "Features"
-aTags[4].setAttribute('class', '.nav-item-5')
-aTags[4].innerText = "About"
-aTags[5].setAttribute('class', '.nav-item-6')
-aTags[5].innerText = "Contact"
+aTags[0].setAttribute('class', '.nav-item-1');
+aTags[0].innerText = "Service";
+aTags[1].setAttribute('class', '.nav-item-2');
+aTags[1].innerText = "Product";
+aTags[2].setAttribute('class', '.nav-item-3');
+aTags[2].innerText = "Vision";
+aTags[3].setAttribute('class', '.nav-item-4');
+aTags[3].innerText = "Features";
+aTags[4].setAttribute('class', '.nav-item-5');
+aTags[4].innerText = "About";
+aTags[5].setAttribute('class', '.nav-item-6');
+aTags[5].innerText = "Contact";
 
-aTags.forEach(link => link.style.color ='green')
+aTags.forEach(link => link.style.color ='green');
 
 //add two navbar items vvv
 
-const newATagOne = document.createElement('a')
-const mainNavOne = document.querySelector('nav')
+const newATagOne = document.createElement('a');
+const mainNavOne = document.querySelector('nav');
 newATagOne.innerText = 'Reviews'
 newATagOne.href = '#'
 mainNavOne.prepend(newATagOne)
@@ -88,3 +88,21 @@ mainButton.innerText = "Get Started"
 
 const logoTwo = document.querySelector("#cta-img")
 logoTwo.setAttribute('src', siteContent["cta"]["img-src"])
+
+//main-content vvv
+
+const mainContent = document.querySelectorAll('.text-content')
+
+mainContent[0].querySelector('h4').textContent = siteContent['main-content']['features-h4']
+mainContent[0].querySelector('p').textContent = siteContent['main-content']['features-content']
+mainContent[1].querySelector('h4').textContent = siteContent['main-content']['about-h4']
+mainContent[1].querySelector('p').textContent = siteContent['main-content']['about-content']
+mainContent[2].querySelector('h4').textContent = siteContent['main-content']['services-h4']
+mainContent[2].querySelector('p').textContent = siteContent['main-content']['services-content']
+mainContent[3].querySelector('h4').textContent = siteContent['main-content']['product-h4']
+mainContent[3].querySelector('p').textContent = siteContent['main-content']['product-content']
+mainContent[4].querySelector('h4').textContent = siteContent['main-content']['vision-h4']
+mainContent[4].querySelector('p').textContent = siteContent['main-content']['vision-content']
+
+const logoThree= document.querySelector("#middle-img")
+logoThree.setAttribute('src', siteContent["main-content"]["middle-img-src"])
