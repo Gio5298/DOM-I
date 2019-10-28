@@ -63,10 +63,10 @@ aTags.forEach(link => link.style.color ='green')
 //add two navbar items vvv
 
 const newATagOne = document.createElement('a')
-const mainNav = document.querySelector('nav')
+const mainNavOne = document.querySelector('nav')
 newATagOne.innerText = 'Reviews'
 newATagOne.href = '#'
-mainNav.prepend(newATagOne)
+mainNavOne.prepend(newATagOne)
 newATagOne.style.color = 'green'
 //prepend ^^^
 
@@ -77,3 +77,14 @@ newATagTwo.href = '#'
 mainNavTwo.append(newATagTwo)
 newATagTwo.style.color = 'green'
 //append ^^^
+
+//main header section vvv
+
+const mainHeading = document.querySelector('h1')
+mainHeading.innerHTML = siteContent['cta']['h1']
+
+const mainButton = document.querySelector('button')
+mainButton.innerText = "Get Started"
+
+const logoTwo = document.querySelector("#cta-img")
+logoTwo.setAttribute('src', siteContent["cta"]["img-src"])
