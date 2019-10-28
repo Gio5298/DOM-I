@@ -59,3 +59,21 @@ aTags[5].setAttribute('class', '.nav-item-6')
 aTags[5].innerText = "Contact"
 
 aTags.forEach(link => link.style.color ='green')
+
+//add two navbar items vvv
+
+const newATagOne = document.createElement('a')
+const mainNav = document.querySelector('nav')
+newATagOne.innerText = 'Reviews'
+newATagOne.href = '#'
+mainNav.prepend(newATagOne)
+newATagOne.style.color = 'green'
+//prepend ^^^
+
+const newATagTwo = document.createElement('a')
+const mainNavTwo = document.querySelector('nav')
+newATagTwo.innerText = 'Info'
+newATagTwo.href = '#'
+mainNavTwo.append(newATagTwo)
+newATagTwo.style.color = 'green'
+//append ^^^
