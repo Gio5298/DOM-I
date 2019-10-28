@@ -106,3 +106,18 @@ mainContent[4].querySelector('p').textContent = siteContent['main-content']['vis
 
 const logoThree= document.querySelector("#middle-img")
 logoThree.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+//contact vvv
+
+const contactInfo = document.querySelector('.contact')
+
+contactInfo.getElementsByTagName('h4')[0].textContent = siteContent["contact"]["contact-h4"]
+contactInfo.getElementsByTagName('p')[0].textContent = siteContent["contact"]["address"]
+contactInfo.getElementsByTagName('p')[1].textContent = siteContent["contact"]["phone"]
+contactInfo.getElementsByTagName('p')[2].textContent = siteContent["contact"]["email"]
+
+//footer vvv
+
+const footer = document.querySelector('footer')
+
+footer.innerText = "Copyright Great Idea! 2018" 
